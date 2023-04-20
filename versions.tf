@@ -13,7 +13,7 @@ terraform {
     hostname     = "app.terraform.io"
     organization = "twks-cohort"
     workspaces {
-      prefix = "lab-iam-profiles-"
+      prefix = "five-lab-iam-profiles-"
     }
   }
 }
@@ -31,7 +31,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-      pipeline = "lab-iam-profiles"
+      pipeline = "five-lab-iam-profiles"
     }
   }
 }
