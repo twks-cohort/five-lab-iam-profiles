@@ -14,7 +14,7 @@ variable "account_id" {
   sensitive   = true
 }
 
-#variable "prod_account_id" {
+variable "prod_account_id" {
 #  type        = string
 #  sensitive   = true
 #}
