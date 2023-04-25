@@ -20,10 +20,8 @@ terraform {
 }
 
 provider "aws" {
-  #region = var.aws_default_region
-  region = "eu-central-1"
-  access_key="ASIA3JVLIUIHCZZ7KGOD"
-  secret_key="CudXX4XJt6XE2tlUxO4RMQYNk8Hv+hq6OnlmbwSQ"
+  region = var.aws_default_region
+  shared_credentials_file = "~/.aws/credentials"
 
   # this section commented out during the initial bootstrap run
   # once the assumeable roles are created, uncomment and change
