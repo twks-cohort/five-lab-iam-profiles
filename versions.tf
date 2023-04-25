@@ -21,7 +21,7 @@ terraform {
 
 provider "aws" {
   region = var.aws_default_region
-  shared_credentials_file = "~/.aws/credentials"
+  
 
   # this section commented out during the initial bootstrap run
   # once the assumeable roles are created, uncomment and change
