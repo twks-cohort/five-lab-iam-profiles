@@ -22,8 +22,8 @@ terraform {
 provider "aws" {
   #region = var.aws_default_region
   region = "eu-central-1"
-  access_key="ASIA3JVLIUIHAWYFMAE3"
-  secret_key="oAZ4HaBhtjR1bW28x7xotiMlDmOrB5UT7fK5e3tI"
+  access_key="ASIA3JVLIUIHCZZ7KGOD"
+  secret_key="CudXX4XJt6XE2tlUxO4RMQYNk8Hv+hq6OnlmbwSQ"
 
   # this section commented out during the initial bootstrap run
   # once the assumeable roles are created, uncomment and change
