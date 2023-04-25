@@ -21,8 +21,8 @@ terraform {
 
 provider "aws" {
   region = var.aws_default_region
-  AWS_ACCESS_KEY_ID="ASIA3JVLIUIHAWYFMAE3"
-  AWS_SECRET_ACCESS_KEY="oAZ4HaBhtjR1bW28x7xotiMlDmOrB5UT7fK5e3tI"
+  access_key="ASIA3JVLIUIHAWYFMAE3"
+  secret_key="oAZ4HaBhtjR1bW28x7xotiMlDmOrB5UT7fK5e3tI"
 
   # this section commented out during the initial bootstrap run
   # once the assumeable roles are created, uncomment and change
