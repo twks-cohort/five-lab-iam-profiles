@@ -19,7 +19,8 @@ terraform {
 }
 
 provider "aws" {
-  region = var.aws_default_region
+  region = "eu-central-1"
+  profile = "team5"
   
 
   # this section commented out during the initial bootstrap run
