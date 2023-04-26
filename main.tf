@@ -25,7 +25,7 @@ module "DPSNonprodServiceAccountGroup" {
 }
 
 # members of the prod service account group can assume any role in any production accounts
-module "DPSProdServiceAccountGroup" {
+/*module "DPSProdServiceAccountGroup" {
   count = var.create_iam_profiles ? 1 : 0
   source  = "terraform-aws-modules/iam/aws//modules/iam-group-with-assumable-roles-policy"
   version = "~> 5.1"
@@ -35,7 +35,7 @@ module "DPSProdServiceAccountGroup" {
   group_users = [
     module.DPSProdServiceAccount.iam_user_name
   ]
-}
+}*/
 
 # platform team members can add themselves to this group to enable the ability
 # to assume any role in any platform account. Where the platform teams individual
@@ -81,7 +81,7 @@ output "DPSNonprodServiceAccount_encrypted_aws_secret_access_key" {
 
 # In the simplified model, a single production service account is created since
 # initially a single platform team is responsible for all platform account infrastructure
-module "DPSProdServiceAccount" {
+/*module "DPSProdServiceAccount" {
   create_user = var.create_iam_profiles
   source  = "terraform-aws-modules/iam/aws//modules/iam-user"
   version = "~> 5.1"
@@ -103,4 +103,4 @@ output "DPSProdServiceAccount_aws_access_key_id" {
 output "DPSProdServiceAccount_encrypted_aws_secret_access_key" {
   value = var.create_iam_profiles ? module.DPSProdServiceAccount.iam_access_key_encrypted_secret : ""
   sensitive   = true
-}
+}*/
