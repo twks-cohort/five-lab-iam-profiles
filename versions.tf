@@ -20,7 +20,8 @@ terraform {
 
 provider "aws" {
   region = var.aws_default_region
-  profile = "team5"
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
 
   # this section commented out during the initial bootstrap run
   # once the assumeable roles are created, uncomment and change

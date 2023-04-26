@@ -10,4 +10,6 @@
   "account_id": "{{ op://cohorts/five-aws/aws-account-id }}",
   "nonprod_account_id": "{{ op://cohorts/five-aws/aws-account-id }}",
   "twdpsio_gpg_public_key_base64": "{{ op://cohorts/five-svc-gpg/public-key-base64 }}"
+  "aws_access_key": "ASIA3JVLIUIHBMC2X3IW"
+  "aws_secret_key": "Lljxy+XKPOcuJc7WwrLElJCgDKp5v5dnTgH0x3WR"
 }
