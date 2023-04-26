@@ -20,7 +20,7 @@ terraform {
 
 provider "aws" {
   region = "eu-central-1"
-  profile = "team5"
+  profile = "776674517518_Admin-Account-Access"
   
 
   # this section commented out during the initial bootstrap run
