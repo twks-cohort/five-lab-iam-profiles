@@ -1,1 +1,1 @@
-op://cohorts/five-svc-gpg-private.key/notesPlain
+op://cohorts/svc-five-gpg-private.key/notesPlain
