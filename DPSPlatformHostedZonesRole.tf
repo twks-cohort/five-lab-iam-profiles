@@ -1,4 +1,4 @@
-/*module "DPSPlatformHostedZonesRole" {
+module "DPSPlatformHostedZonesRole" {
   source      = "terraform-aws-modules/iam/aws//modules/iam-assumable-role"
   version     = "~> 5.1"
   create_role = true
@@ -84,4 +84,4 @@ resource "aws_iam_policy" "DPSPlatformHostedZonesRolePolicy" {
       },
     ]
   })
-}*/
+}
