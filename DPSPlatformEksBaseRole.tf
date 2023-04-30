@@ -3,7 +3,7 @@
 # Used by: lab-platform-eks-base pipeline
 # manages baseline eks cluster provisioning and configuration
 
-/*module "DPSPlatformEksBaseRole" {
+module "DPSPlatformEksBaseRole" {
   source      = "terraform-aws-modules/iam/aws//modules/iam-assumable-role"
   version     = "~> 5.1"
   create_role = true
@@ -166,4 +166,4 @@ resource "aws_iam_policy" "DPSPlatformEksBaseRolePolicy" {
       },
     ]
   })
-}*/
+}
